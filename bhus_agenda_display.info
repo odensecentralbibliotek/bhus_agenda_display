@@ -1,0 +1,9 @@
+name = bhus agenda display
+description = Display the agenda screen.
+package = bhus
+core = 7.x
+configure = 
+
+; Information added by Drupal.org packaging script on 2015-11-06
+version = "7.x-1.0"
+core = "7.x"

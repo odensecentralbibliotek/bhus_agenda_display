@@ -1,0 +1,79 @@
+
+#content
+{
+    color:white;
+    background-color: #0D2036;
+    overflow-y: no-display;
+    height: 100%;
+    width: 100%;
+}
+#top-bar
+{
+    background-color: #115959;
+    width: 100%;
+}
+#wrapper
+{
+    margin: 10px;
+    padding: 20px;
+    height: 100%;
+    
+}
+.align-center
+{
+    text-align: center;
+}
+.right-text{
+   padding-top:13px !important;
+   font-size: 40px !important;
+}
+tbody{
+    font-size: 22px;
+}
+thead
+{
+    font-size: 24px;
+}
+.middle-text
+{
+    font-size: 70px !important;
+    padding-top: 18px !important;
+}
+#no-results
+{
+    font-size: 40px;
+     margin:0 auto;
+    position:relative;
+    text-align: center;
+}
+.table-striped > tbody > tr:nth-of-type(2n+1)
+{
+    background-color: #0d4949 !important;
+    
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td
+{
+    background-color: #0d4949 !important;
+}
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    tbody{
+        font-size: 11px;
+    }
+    thead
+    {
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}

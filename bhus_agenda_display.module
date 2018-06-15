@@ -1,0 +1,46 @@
+<?php
+
+function bhus_agenda_display_token_info() { 
+  $info['tokens']['node']['bhus-agenda'] = array(
+    'name' => t('Embed agenda skærm'),
+    'description' => t('Alt hvad der skal til for at vise agenda skærm i indhold)'),
+  );
+  return $info;
+}
+
+/**
+* Implements hook_tokens().
+*/
+function bhus_agenda_display_tokens($type, $tokens, array $data = array(), array $options = array()) {
+ $replacements = array();   
+   if ($type == 'node') {   
+     foreach ($tokens as $name => $original) {     
+      switch ($name) {
+        case 'bhus-agenda':
+          $replacements[$original] = bhus_agenda_display_init_system();
+          break;
+      }
+     }
+  }
+
+  return $replacements;  
+}
+function bhus_agenda_display_init_system()
+{
+    //add js and css to page
+    drupal_add_css(drupal_get_path('module', 'bhus_agenda_display') . "/css/agenda.css");
+    drupal_add_js(drupal_get_path('module', 'bhus_agenda_display') . "/js/agenda.js");
+    //init with preloader
+    return theme('bhus_agenda_screen');
+}
+/**
+* Implements hook_theme().
+*/
+function bhus_agenda_display_theme($existing, $type, $theme, $path) {
+ $theme = array();
+ $theme['bhus_agenda_screen'] = array(
+   'template' => 'main',
+   'path' => drupal_get_path('module', 'bhus_agenda_display') . '/templates',
+  );
+ return $theme;
+}
