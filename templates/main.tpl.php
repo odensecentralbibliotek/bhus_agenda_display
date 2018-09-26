@@ -6,4 +6,4 @@
 <input id="targetemails" type="hidden" value="<?php echo "";//$_GET['targetmailbox'] ?>">
 <input id="startdate" type="hidden" value="<?php echo "00:00:00" ?>">
 <input id="enddate" type="hidden" value="<?php echo "23:59:59" ?>">
-<input id="displaycount" type="hidden" value="<?php echo "10" ?>">
+<input id="displaycount" type="hidden" value="<?php echo "30" ?>">
