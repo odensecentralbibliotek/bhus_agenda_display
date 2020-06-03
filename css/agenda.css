@@ -1,7 +1,7 @@
 
 #content
 {
-    color:white;
+    color:black;
     background-color: #0D2036;
     overflow-y: no-display;
     height: 100%;
@@ -48,12 +48,12 @@ thead
 }
 .table-striped > tbody > tr:nth-of-type(2n+1)
 {
-    background-color: #0d4949 !important;
+    background-color: lightgrey  !important;
     
 }
 .table-striped > tbody > tr:nth-child(2n+1) > td
 {
-    background-color: #0d4949 !important;
+    background-color: lightgrey  !important;
 }
 /*==========  Mobile First Method  ==========*/
 
